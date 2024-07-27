@@ -15,6 +15,13 @@ def aws_architectural_diagram_html():
 def cloud_readiness_assessment():
     return render_template('cloudreadinessassessment.html')
 
+@app.route('/ganttchart')
+def gantt_chart():
+    return render_template('ganttchart.html')
+
+@app.route('/ganttchartdownload')
+def gantt_chart_download():
+    return render_template('ganttchartdownload.html')
 
 if __name__ == '__main__':
     app.run()
